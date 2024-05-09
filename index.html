@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Empresa de Rutines d'Esport i Menjar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"> <!-- Bulma CSS -->
+    <style>
+        .hero-background {
+            background-image: url('https://via.placeholder.com/1200x400'); /* Imatge de fons per a la capçalera */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Secció de capçalera amb imatge de fons -->
+    <section class="hero is-primary hero-background">
+        <div class="hero-body has-text-centered">
+            <div class="container">
+                <h1 class="title">Benvingut a FitLife</h1>
+                <h2 class="subtitle">Rutines d'esport i menjar per a una vida saludable</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secció d'informació amb columnes -->
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column has-background-light has-text-centered"> <!-- Afegim color de fons a les columnes -->
+                    <h2 class="title">Qui som?</h2>
+                    <p>Som una empresa dedicada a oferir rutines d'esport i menjar personalitzades. El nostre equip està format per experts en fitness i nutrició.</p>
+                </div>
+                <div class="column has-background-light has-text-centered">
+                    <h2 class="title">Els nostres serveis</h2>
+                    <ul>
+                        <li>Plans d'entrenament personalitzats</li>
+                        <li>Consells de nutrició</li>
+                        <li>Seguiment setmanal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secció de testimonis -->
+    <section class="section">
+        <div class="container has-text-centered"> <!-- Centrem el contingut de la secció -->
+            <h2 class="title">Testimonis</h2>
+            <p>"FitLife m'ha canviat la vida. Ara em sento més saludable i amb més energia." - Joana, 35 anys</p>
+            <p>"Amb els seus plans d'entrenament, vaig perdre 10 kg en 3 mesos. Són genials!" - Pau, 28 anys</p>
+        </div>
+    </section>
+
+    <!-- Secció de formulari de contacte -->
+    <section class="section">
+        <div class="container">
+            <h2 class="title">Contacta'ns</h2>
+            <form>
+                <div class="field">
+                    <label class="label">Nom</label>
+                    <div class="control">
+                        <input type="text" class="input" placeholder="El teu nom" required> <!-- Camp d'entrada -->
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Correu electrònic</label>
+                    <div class="control">
+                        <input type="email" class="input" placeholder="El teu correu electrònic" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Missatge</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="El teu missatge" required></textarea> <!-- Àrea de text -->
+                    </div>
+                </div>
+                <div class="control">
+                    <button type="submit" class="button is-primary">Enviar</button> <!-- Botó amb estil Bulma -->
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Peu de pàgina -->
+    <footer class="footer">
+        <div class="content has-text-centered"> <!-- Peu de pàgina centrat -->
+            <p>© 2024 FitLife. Tots els drets reservats.</p>
+        </div>
+    </footer>
+</body>
+</html>

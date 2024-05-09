@@ -1,0 +1,100 @@
+/* Estils globals */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f0f0; /* Lleuger canvi de color de fons per donar més calidesa */
+    color: #333333; /* Color global del text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Secció de capçalera */
+.hero {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradients atractius */
+    color: white;
+    text-align: center;
+}
+
+.hero .title {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero .subtitle {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Seccions */
+.section {
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2rem;
+    color: #444444;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #666666;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Secció d'informació */
+.columns {
+    margin-bottom: 2rem;
+}
+
+.column {
+    padding: 1rem;
+    background-color: #ffffff; /* Fons blanc per destacar el contingut */
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Secció de formulari de contacte */
+.field {
+    margin-bottom: 1rem;
+}
+
+.input, .textarea {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+    transition: border-color 0.3s;
+}
+
+.input:focus, .textarea:focus {
+    border-color: #3273dc; /* Canvi de color quan està enfocat */
+    outline: none;
+}
+
+.button {
+    background-color: #3273dc;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #276cda;
+    transform: scale(1.05); /* Suau augment de mida en hover */
+}
+
+/* Peu de pàgina */
+.footer {
+    background-color: #333333; /* Fons fosc per contrastar */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
