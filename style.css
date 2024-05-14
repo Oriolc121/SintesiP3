@@ -214,21 +214,21 @@ hr {
   position: fixed;
   left: 0;
   top: 0;
-  height: 100%; /* Per a que la barra de progrés ocupi tot l'alçada de la finestra */
-  width: 8px; /* Amplada de la barra de progrés */
-  background-color: #f0f0f0; /* Color de fons de la barra */
+  height: 100%; 
+  width: 8px; 
+  background-color: #333; 
 }
 
 .progress-bar {
-  width: 100%; /* Per a que la barra de progrés ocupe tot l'espai disponible */
-  background-color: #e74c3c; /* Color de la barra de progrés */
+  width: 100%; 
+  background-color: #e74c3c; 
 }
 footer {
-  background-color: #333; /* Color de fons del footer */
-  color: #fff; /* Color del text del footer */
-  padding: 20px 0; /* Espaiat interior del footer */
-  text-align: center; /* Alineació del text al centre */
-  position: relative; /* Per a que els elements d'ona estiguin posicionats respecte al footer */
+  background-color: #333; 
+  color: #e74c3c; 
+  padding: 20px 0; 
+  text-align: center; 
+  position: relative;
 }
 
 .footer-content {
@@ -297,7 +297,7 @@ footer {
 
 .label {
   font-weight: bold; /* Text en negreta */
-  color: white;
+  color: #e74c3c;
 }
 
 .input,
@@ -317,14 +317,117 @@ footer {
 
 .button {
   padding: 0.5rem 1rem; /* Espaiat interior del botó */
-  background-color: #3273dc; /* Color de fons del botó */
+  background-color: #e74c3c; /* Color de fons del botó */
   color: #fff; /* Color del text del botó */
   border: none; /* Borde del botó */
   border-radius: 4px; /* Bordes arrodonits */
   cursor: pointer; /* Cursor apuntador al passar per sobre */
-  transition: background-color 0.3s; /* Transició suau del color de fons */
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Transició suau del color de fons */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra petita */
 }
 
 .button:hover {
-  background-color: #2769c4; /* Color de fons del botó en hover */
+  background-color: #e74c3c; /* Color de fons del botó en hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra més gran al passar per sobre */
+  transform: translateY(-2px); /* Lleuger moviment cap amunt */
+}
+
+.button:active {
+  background-color: #000; /* Color de fons del botó en actiu */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra original en actiu */
+  transform: translateY(0); /* Tornar a la posició original */
+}
+
+h2 { /* Linea vermella al pasar el cursor*/
+  display: table;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #e74c3c;
+  transform: scale(0,1);
+  transform-origin: center;
+  transition: transform .25s;
+  
+}
+
+h2:hover::after {
+  transform: scale(1,1);
+}
+label { /* Linea vermella al pasar el cursor*/
+  display: table;
+}
+
+label::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #e74c3c;
+  transform: scale(0,1);
+  transform-origin: center;
+  transition: transform .25s;
+  
+}
+
+label:hover::after {
+  transform: scale(1,1);
+}
+#ressenyes {
+  width: 80%;
+  max-width: 1200px;
+}
+
+.review-carousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #e74c3c;
+  padding: 1rem;
+  background-color: #2a2a2a;
+}
+
+.review-card {
+  min-width: 200px;
+  margin: 0 1rem;
+  text-align: center;
+  padding: 1rem;
+  border: 2px solid #e74c3c;
+  background-color: #2a2a2a;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 0 0 auto;
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.username {
+  margin: 10px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.stars {
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+.comment {
+  font-size: 1em;
+  color: #ddd;
+}
+.review-card img {
+  width: 50px; /* Tamaño pequeño */
+  height: 50px; /* Tamaño pequeño */
+  border-radius: 50%; /* Redondear la imagen */
+  margin-bottom: 10px;
 }
