@@ -4,15 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-  <title>Landing Page de l'Empresa</title>
+  <title>FitYou</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="contenedor_carga"> 
+    <div id="carga"></div>
+</div>
   <!-- Menú de Navegació -->
   <nav class="navbar is-primary">
     <div class="navbar-brand">
-      <a class="navbar-item" href="#inici">Empresa</a>
+      <a class="navbar-item" href="#inici">FitYou</a>
     </div>
     <div class="navbar-menu">
       <div class="navbar-start">
@@ -27,8 +30,8 @@
   <!-- Secció Inici -->
   <section id="inici" class="section">
     <div class="container">
-      <h1 class="title">Benvinguts a la nostra Empresa</h1>
-      <p class="subtitle">Descobreix els nostres serveis i la nostra història.</p>
+      <h1 class="title">Benvinguts a la pàgina web de FitYou</h1>
+      <p class="subtitle">On la Salut i el Fitness es Troben per Crear un Canvi Positiu.</p>
       
       <!-- Carrusel d'Imatges -->
       <div class="carousel">
@@ -52,14 +55,27 @@
   <section id="sobre-nosaltres" class="section">
     <div class="container">
       <h2 class="title">Sobre Nosaltres</h2>
-      <p>Som una empresa dedicada a...</p>
+      <hr>
+      <p>Benvinguts a FitYou, el teu soci en el viatge cap a una vida més saludable i activa. A FitYou, creiem fermament en l'impacte positiu que la salut i el fitness poden tenir en la vida de les persones. Des de la nostra fundació, hem estat compromesos a proporcionar serveis de primera classe que ajudin els nostres clients a assolir els seus objectius de salut i benestar.</p>
+<br> 
+<p>La nostra història comença amb una passió compartida per la salut i el fitness. Amb l'objectiu de fer una diferència real en les vides de les persones, vam establir FitYou amb una visió clara: oferir programes de nutrició personalitzats i entrenament de qualitat que inspirin, eduquin i capacitin els nostres clients a adoptar hàbits de vida saludables a llarg termini.</p>
+      <br> 
+<p>A FitYou, la nostra missió és senzilla: ajudar-vos a viure la millor versió de vosaltres mateixos. Creiem que cada individu és únic, i això és per què adoptem una aproximació personalitzada en tot el que fem. Des dels nostres plans de nutrició adaptats a les necessitats específiques de cada client fins als nostres programes d'entrenament enfocats en objectius, estem aquí per guiar-vos, motivar-vos i donar-vos suport en cada pas del camí.</p>
+  <br>    
+<p>El nostre equip està format per professionals apassionats i qualificats, incloent-hi nutricionistes, entrenadors personals, instructors de fitness i altres experts en salut. Tots estem dedicats a proporcionar-vos un servei excepcional i ajudar-vos a assolir els vostres objectius de salut i fitness.</p>
+        
+<p>A FitYou, no només ens preocupem pel que feu a la nostra instal·lació, sinó també pel que feu fora d'ella. Us animem a adoptar un estil de vida actiu i saludable que us permeti gaudir de la vida al màxim. Amb la nostra orientació i suport, podeu confiar en què estareu en bones mans mentre treballeu per millorar la vostra salut i benestar.</p>
+        <br> 
+<p>Us donem les gràcies per triar FitYou com a vostre soci en el viatge cap a una vida més saludable i feliç. Estem emocionats de començar a treballar junts i ajudar-vos a assolir els vostres objectius de salut i fitness. Junts, podem fer grans coses!</p>
+
     </div>
   </section>
 
   <!-- Secció Serveis -->
   <section id="serveis" class="section">
     <div class="container">
-      <h2 class="title">Serveis</h2>
+      <h2 class="title">Serveis que oferim</h2>
+      <hr>
       <div class="columns">
         <div class="column">
           <h3 class="subtitle">Servei 1</h3>
@@ -81,6 +97,7 @@
   <section id="contacte" class="section">
     <div class="container">
       <h2 class="title">Contacte</h2>
+      <hr>
       <form id="formulari-contacte">
         <div class="field">
           <label class="label">Nom</label>
@@ -105,8 +122,23 @@
         </div>
       </form>
     </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
   </section>
-
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2024 FitYou. Tots els drets reservats.</p>
+    <p>Adreça: Olesa de Montserrat</p>
+    <p>Telèfon: 615 88 27 43 | Correu electrònic: support@fityou.com</p>
+  </div>
+  <!-- Animació d'Ondes -->
+  <div class="waves">
+    <div class="wave a"></div>
+    <div class="wave b"></div>
+    <div class="wave c"></div>
+  </div>
+</footer>
   <script src="scripts.js"></script>
 </body>
 </html>

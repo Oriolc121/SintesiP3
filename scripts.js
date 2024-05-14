@@ -63,3 +63,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     setInterval(showNextImage, 3000); // Canvia d'imatge cada 3 segons
   });
   
+
+  window.onload = function(){
+    var contenedor = document.getElementById('contenedor_carga'); 
+  
+    setTimeout(function(){
+      contenedor.style.visibility = 'hidden'; 
+      contenedor.style.opacity = '0'; 
+    }, 3000); // aquest codi fa que la primera animacio es quedi uns 3 segons i es tregui
+  }
+  window.onscroll = function() {progressFunction()};
+
+  function progressFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.height = scrolled + "%";
+  }

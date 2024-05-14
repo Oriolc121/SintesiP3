@@ -1,120 +1,330 @@
+*,*:after, *:before{
+  margin: 0; 
+  padding: 0; 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#contenedor_carga{
+  background-color:  #2a2a2a;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  transition: fixed;
+  -webkit-box-sizing: all 1s ease;
+  -moz-box-sizing: all 1s ease;
+  box-sizing: all 1s ease;
+  z-index: 10000;
+}
+
+#carga{
+  border: 15px solid #ccc; 
+  border-top-color: #f4266a; 
+  border-top-style: groove; 
+  height: 100px; 
+  width: 100px; 
+  border-radius: 100%;
+
+  position: absolute; 
+  top: 0;
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  animation: auto; 
+  -webkit-animation: girar 1.5s linear infinite; 
+  -o-animation: girar 1.5s linear infinite;
+  animation: girar 1.5s linear infinite; 
+}
+
+@keyframes girar {
+  from { transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
+}
+
 /* Estils globals */
 body {
-    font-family: 'Montserrat';font-size: 22px;
-    color: #f5f5f5;
-    background-color: #1a1a1a;
-    margin: 0;
-    padding: 0;
+  font-family: 'Montserrat';
+  font-size: 22px;
+  color: #f5f5f5;
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navegació */
+.navbar {
+  background-color: #000000; /* Fons negre */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-item,
+.navbar-brand a {
+  color: #f5f5f5;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-item:hover,
+.navbar-brand a:hover {
+  color: #e74c3c; /* Color del text en vermell */
+  background-color: #1a1a1a; /* Lleuger canvi de fons */
+}
+
+.navbar-item.is-active {
+  color: #e74c3c; /* Vermell */
+}
+
+/* Seccions */
+section.section {
+  padding: 4rem 1.5rem;
+  background-color: #2a2a2a;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title,
+.subtitle {
+  color: #e74c3c; /* Vermell */
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Carrusel */
+.carousel {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 300px; /* Alçada fixa per al carrusel */
+}
+
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajustar les imatges dins del carrusel */
+}
+
+.carousel-item.is-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.carousel-item.next {
+  transform: translateX(100%);
+}
+
+.carousel-item.prev {
+  transform: translateX(-100%);
+}
+
+.field {
+  margin-bottom: 1.5rem;
+}
+
+.input,
+.textarea {
+  border: 1px solid #e74c3c;
+  box-shadow: none;
+  background-color: #3a3a3a;
+  color: white;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 0.125em rgba(231, 76, 60, 0.25);
+}
+
+.button.is-primary {
+  background-color: #e74c3c;
+  border-color: transparent;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.button.is-primary:hover {
+  background-color: #c0392b;
+}
+
+#serveis .column {
+  border: 2px solid #e74c3c; /* Contorn vermell */
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem; /* Espai entre serveis */
+  background-color: #2a2a2a; /* Fons de la columna per ressaltar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra petita */
+}
+
+#serveis .column:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.2); /* Ombra més gran al passar per sobre */
+}
+
+#serveis .columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+#serveis .columns .column {
+  margin: 0 1rem;
+}
+
+#serveis .columns .column:first-child {
+  margin-left: 0;
+}
+
+#serveis .columns .column:last-child {
+  margin-right: 0;
+}
+hr {
+  border: none;
+  height: 5px;
+  background-color: #e74c3c;
+  margin: 40px 0;
+  animation: moveFromLeft 8s ease-out forwards;
+}
+@keyframes moveFromLeft {
+  from {
+      width: 0;
   }
-  
-  /* Navegació */
-  .navbar {
-    background-color: #2a2a2a;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  to {
+      width: 100%;
   }
-  
-  .navbar-item,
-  .navbar-brand a {
-    color: #f5f5f5;
-    font-weight: bold;
-  }
-  
-  .navbar-item:hover,
-  .navbar-brand a:hover {
-    background-color: #3a3a3a;
-  }
-  
-  .navbar-item.is-active {
-    color: #e74c3c; /* Vermell */
-  }
-  
-  /* Seccions */
-  section.section {
-    padding: 4rem 1.5rem;
-    background-color: #2a2a2a;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .title,
-  .subtitle {
-    color: #e74c3c; /* Vermell */
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
-  .subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  /* Carrusel */
-  .carousel {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    height: 300px; /* Alçada fixa per al carrusel */
-  }
-  
-  .carousel-item {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: transform 1s ease, opacity 1s ease;
-  }
-  
-  .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajustar les imatges dins del carrusel */
-  }
-  
-  .carousel-item.is-active {
-    opacity: 1;
+}
+.progress-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%; /* Per a que la barra de progrés ocupi tot l'alçada de la finestra */
+  width: 8px; /* Amplada de la barra de progrés */
+  background-color: #f0f0f0; /* Color de fons de la barra */
+}
+
+.progress-bar {
+  width: 100%; /* Per a que la barra de progrés ocupe tot l'espai disponible */
+  background-color: #e74c3c; /* Color de la barra de progrés */
+}
+footer {
+  background-color: #333; /* Color de fons del footer */
+  color: #fff; /* Color del text del footer */
+  padding: 20px 0; /* Espaiat interior del footer */
+  text-align: center; /* Alineació del text al centre */
+  position: relative; /* Per a que els elements d'ona estiguin posicionats respecte al footer */
+}
+
+.footer-content {
+  max-width: 960px; /* Amplada màxima del contingut del footer */
+  margin: 0 auto; /* Centratge horitzontal del contingut */
+}
+
+.footer-content p {
+  margin: 5px 0; /* Espaiat entre els paràgrafs del footer */
+}
+
+/* Estils per a l'animació d'ones */
+.waves {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px; /* Alçada de les ones */
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  width: 2000px; /* Amplada de les ones */
+  height: 120px; /* Alçada de les ones */
+  bottom: 0;
+  background: url(https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png) center bottom no-repeat; /* Imatge de les ones */
+  animation: 2s wave ease-in-out infinite alternate;
+}
+
+.wave.a {
+  background-position: 0 -890px;
+}
+
+.wave.b {
+  background-position: 0 -450px;
+  animation-delay: .5s;
+}
+
+.wave.c {
+  background-position: 0 0;
+  animation-delay: 1.5s;
+}
+
+/* Animació d'ones */
+@keyframes wave {
+  0% {
     transform: translateX(0);
   }
-  
-  .carousel-item.next {
-    transform: translateX(100%);
+  50% {
+    transform: translateX(-80px);
   }
-  
-  .carousel-item.prev {
-    transform: translateX(-100%);
+  100% {
+    transform: translateX(160px);
   }
-  
-  /* Formulari de contacte */
-  .field {
-    margin-bottom: 1.5rem;
-  }
-  
-  .input,
-  .textarea {
-    border: 1px solid #e74c3c;
-    box-shadow: none;
-    background-color: #3a3a3a;
-    color: #f5f5f5;
-  }
-  
-  .input:focus,
-  .textarea:focus {
-    border-color: #e74c3c;
-    box-shadow: 0 0 0 0.125em rgba(231, 76, 60, 0.25);
-  }
-  
-  .button.is-primary {
-    background-color: #e74c3c;
-    border-color: transparent;
-    color: #fff;
-    transition: background-color 0.3s ease;
-  }
-  
-  .button.is-primary:hover {
-    background-color: #c0392b;
-  }
-  
+}
+/* Estils per al formulari de contacte */
+#formulari-contacte {
+  max-width: 600px; /* Amplada màxima del formulari */
+  margin: 0 auto; /* Centratge horitzontal */
+}
+
+.field {
+  margin-bottom: 1.5rem; /* Espaiat entre camps */
+}
+
+.label {
+  font-weight: bold; /* Text en negreta */
+  color: white;
+}
+
+.input,
+.textarea {
+  width: 100%; /* Amplada total dels camps d'entrada */
+  padding: 0.5rem; /* Espaiat interior */
+  border: 1px solid #ccc; /* Borde dels camps */
+  border-radius: 4px; /* Bordes arrodonits */
+  transition: border-color 0.3s; /* Transició suau del color del borde */
+  color: white; 
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #3273dc; /* Color del borde en focus */
+}
+
+.button {
+  padding: 0.5rem 1rem; /* Espaiat interior del botó */
+  background-color: #3273dc; /* Color de fons del botó */
+  color: #fff; /* Color del text del botó */
+  border: none; /* Borde del botó */
+  border-radius: 4px; /* Bordes arrodonits */
+  cursor: pointer; /* Cursor apuntador al passar per sobre */
+  transition: background-color 0.3s; /* Transició suau del color de fons */
+}
+
+.button:hover {
+  background-color: #2769c4; /* Color de fons del botó en hover */
+}
