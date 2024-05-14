@@ -1,92 +1,112 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <title>Empresa de Rutines d'Esport i Menjar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"> <!-- Bulma CSS -->
-    <style>
-        .hero-background {
-            background-image: url('https://via.placeholder.com/1200x400'); /* Imatge de fons per a la capçalera */
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <title>Landing Page de l'Empresa</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Secció de capçalera amb imatge de fons -->
-    <section class="hero is-primary hero-background">
-        <div class="hero-body has-text-centered">
-            <div class="container">
-                <h1 class="title">Benvingut a FitLife</h1>
-                <h2 class="subtitle">Rutines d'esport i menjar per a una vida saludable</h2>
-            </div>
-        </div>
-    </section>
+  <!-- Menú de Navegació -->
+  <nav class="navbar is-primary">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#inici">Empresa</a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="#inici">Inici</a>
+        <a class="navbar-item" href="#sobre-nosaltres">Sobre Nosaltres</a>
+        <a class="navbar-item" href="#serveis">Serveis</a>
+        <a class="navbar-item" href="#contacte">Contacte</a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Secció d'informació amb columnes -->
-    <section class="section">
-        <div class="container">
-            <div class="columns">
-                <div class="column has-background-light has-text-centered"> <!-- Afegim color de fons a les columnes -->
-                    <h2 class="title">Qui som?</h2>
-                    <p>Som una empresa dedicada a oferir rutines d'esport i menjar personalitzades. El nostre equip està format per experts en fitness i nutrició.</p>
-                </div>
-                <div class="column has-background-light has-text-centered">
-                    <h2 class="title">Els nostres serveis</h2>
-                    <ul>
-                        <li>Plans d'entrenament personalitzats</li>
-                        <li>Consells de nutrició</li>
-                        <li>Seguiment setmanal</li>
-                    </ul>
-                </div>
-            </div>
+  <!-- Secció Inici -->
+  <section id="inici" class="section">
+    <div class="container">
+      <h1 class="title">Benvinguts a la nostra Empresa</h1>
+      <p class="subtitle">Descobreix els nostres serveis i la nostra història.</p>
+      
+      <!-- Carrusel d'Imatges -->
+      <div class="carousel">
+        <div class="carousel-item is-active">
+          <img src="https://www.publico.es/uploads/2024/05/12/664122be5afd5.jpeg" alt="Imatge 1">
         </div>
-    </section>
+        <div class="carousel-item">
+          <img src="https://media.eitb.eus/multimedia/images/2024/05/12/3230136/20240512232158_silviaorriolsaliancacatal_amp_w1200.jpg" alt="Imatge 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.publico.es/uploads/2024/05/12/664122be5afd5.jpeg" alt="Imatge 3">
+        </div>
+        <div class="carousel-item">
+          <img src="https://media.eitb.eus/multimedia/images/2024/05/12/3230136/20240512232158_silviaorriolsaliancacatal_amp_w1200.jpg" alt="Imatge 4">
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Secció de testimonis -->
-    <section class="section">
-        <div class="container has-text-centered"> <!-- Centrem el contingut de la secció -->
-            <h2 class="title">Testimonis</h2>
-            <p>"FitLife m'ha canviat la vida. Ara em sento més saludable i amb més energia." - Joana, 35 anys</p>
-            <p>"Amb els seus plans d'entrenament, vaig perdre 10 kg en 3 mesos. Són genials!" - Pau, 28 anys</p>
-        </div>
-    </section>
+  <!-- Secció Sobre Nosaltres -->
+  <section id="sobre-nosaltres" class="section">
+    <div class="container">
+      <h2 class="title">Sobre Nosaltres</h2>
+      <p>Som una empresa dedicada a...</p>
+    </div>
+  </section>
 
-    <!-- Secció de formulari de contacte -->
-    <section class="section">
-        <div class="container">
-            <h2 class="title">Contacta'ns</h2>
-            <form>
-                <div class="field">
-                    <label class="label">Nom</label>
-                    <div class="control">
-                        <input type="text" class="input" placeholder="El teu nom" required> <!-- Camp d'entrada -->
-                    </div>
-                </div>
-                <div class="field">
-                    <label class="label">Correu electrònic</label>
-                    <div class="control">
-                        <input type="email" class="input" placeholder="El teu correu electrònic" required>
-                    </div>
-                </div>
-                <div class="field">
-                    <label class="label">Missatge</label>
-                    <div class="control">
-                        <textarea class="textarea" placeholder="El teu missatge" required></textarea> <!-- Àrea de text -->
-                    </div>
-                </div>
-                <div class="control">
-                    <button type="submit" class="button is-primary">Enviar</button> <!-- Botó amb estil Bulma -->
-                </div>
-            </form>
+  <!-- Secció Serveis -->
+  <section id="serveis" class="section">
+    <div class="container">
+      <h2 class="title">Serveis</h2>
+      <div class="columns">
+        <div class="column">
+          <h3 class="subtitle">Servei 1</h3>
+          <p>Descripció del servei 1.</p>
         </div>
-    </section>
+        <div class="column">
+          <h3 class="subtitle">Servei 2</h3>
+          <p>Descripció del servei 2.</p>
+        </div>
+        <div class="column">
+          <h3 class="subtitle">Servei 3</h3>
+          <p>Descripció del servei 3.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Peu de pàgina -->
-    <footer class="footer">
-        <div class="content has-text-centered"> <!-- Peu de pàgina centrat -->
-            <p>© 2024 FitLife. Tots els drets reservats.</p>
+  <!-- Secció Contacte -->
+  <section id="contacte" class="section">
+    <div class="container">
+      <h2 class="title">Contacte</h2>
+      <form id="formulari-contacte">
+        <div class="field">
+          <label class="label">Nom</label>
+          <div class="control">
+            <input class="input" type="text" id="nom" placeholder="El teu nom">
+          </div>
         </div>
-    </footer>
+        <div class="field">
+          <label class="label">Correu electrònic</label>
+          <div class="control">
+            <input class="input" type="email" id="correu" placeholder="El teu correu electrònic">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Missatge</label>
+          <div class="control">
+            <textarea class="textarea" id="missatge" placeholder="El teu missatge"></textarea>
+          </div>
+        </div>
+        <div class="control">
+          <button class="button is-primary" type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
