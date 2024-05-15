@@ -84,3 +84,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.height = scrolled + "%";
   }
+  document.addEventListener('DOMContentLoaded', function () {
+    // Obtenim tots els elements necessaris
+    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Si no hi ha cap element, sortim
+    if ($navbarBurgers.length === 0) {
+      return;
+    }
+
+    // Afegim listeners a cada botó de hamburguesa
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+        // Obtenim el target del botó de hamburguesa
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Alterem la classe 'is-active' a tots els elements necessaris
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+      });
+    });
+  });
+

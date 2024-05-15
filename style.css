@@ -43,7 +43,6 @@
   to { transform: rotate(360deg);}
 }
 
-/* Estils globals */
 body {
   font-family: 'Montserrat';
   font-size: 22px;
@@ -68,8 +67,8 @@ body {
 
 .navbar-item:hover,
 .navbar-brand a:hover {
-  color: #e74c3c; /* Color del text en vermell */
-  background-color: #1a1a1a; /* Lleuger canvi de fons */
+  color: #e74c3c; 
+  background-color: #1a1a1a; 
 }
 
 .navbar-item.is-active {
@@ -86,7 +85,7 @@ section.section {
 
 .title,
 .subtitle {
-  color: #e74c3c; /* Vermell */
+  color: #e74c3c; 
 }
 
 .title {
@@ -94,6 +93,7 @@ section.section {
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  back
 }
 
 .subtitle {
@@ -106,7 +106,7 @@ section.section {
   position: relative;
   max-width: 100%;
   overflow: hidden;
-  height: 300px; /* Alçada fixa per al carrusel */
+  height: 300px; 
 }
 
 .carousel-item {
@@ -120,7 +120,7 @@ section.section {
 .carousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ajustar les imatges dins del carrusel */
+  object-fit: cover; 
 }
 
 .carousel-item.is-active {
@@ -166,16 +166,16 @@ section.section {
 }
 
 #serveis .column {
-  border: 2px solid #e74c3c; /* Contorn vermell */
+  border: 2px solid #e74c3c; 
   padding: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 2rem; /* Espai entre serveis */
-  background-color: #2a2a2a; /* Fons de la columna per ressaltar */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra petita */
+  margin-bottom: 2rem;
+  background-color: #2a2a2a; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 #serveis {
-  padding: 2rem 0; /* Espaiat al voltant de la secció */
+  padding: 2rem 0; 
 }
 
 #serveis .title {
@@ -191,22 +191,22 @@ section.section {
 }
 
 #serveis .column {
-  background-color: #2a2a2a; /* Fons de la columna per ressaltar */
-  border: 2px solid transparent; /* Contorn transparent per a la transició */
+  background-color: #2a2a2a; 
+  border: 2px solid transparent; 
   padding: 2rem 1rem;
   margin: 1rem;
   flex: 1;
   max-width: 300px;
   text-align: center;
-  border-radius: 10px; /* Bordes arrodonits */
+  border-radius: 10px; 
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra inicial */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 #serveis .column:hover {
-  transform: scale(1.1); /* Augment de mida al passar per sobre */
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Ombra més gran al passar per sobre */
-  border: 2px solid #e74c3c; /* Contorn vermell al passar per sobre */
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); 
+  border: 2px solid #e74c3c; 
 }
 
 #serveis .column h3 {
@@ -220,23 +220,23 @@ section.section {
 }
 
 #serveis .column .button {
-  padding: 0.5rem 1rem; /* Espaiat interior del botó */
-  background-color: #e74c3c; /* Color de fons del botó */
-  color: #fff; /* Color del text del botó */
-  border: none; /* Borde del botó */
-  border-radius: 4px; /* Bordes arrodonits */
-  cursor: pointer; /* Cursor apuntador al passar per sobre */
-  transition: background-color 0.3s, transform 0.3s; /* Transició suau del color de fons */
+  padding: 0.5rem 1rem; 
+  background-color: #e74c3c; 
+  color: #fff;
+  border: none;
+  border-radius: 4px; 
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; 
 }
 
 #serveis .column .button:hover {
-  background-color: #c0392b; /* Color de fons del botó en hover */
-  transform: scale(1.05); /* Augment de mida al passar per sobre */
+  background-color: #c0392b; 
+  transform: scale(1.05); 
 }
 
 #serveis .column .button:active {
-  background-color: #a93226; /* Color de fons del botó en actiu */
-  transform: scale(0.95); /* Disminució de mida al fer clic */
+  background-color: #a93226; 
+  transform: scale(0.95); 
 }
 
 hr {
@@ -276,12 +276,12 @@ footer {
 }
 
 .footer-content {
-  max-width: 960px; /* Amplada màxima del contingut del footer */
-  margin: 0 auto; /* Centratge horitzontal del contingut */
+  max-width: 960px; 
+  margin: 0 auto; 
 }
 
 .footer-content p {
-  margin: 5px 0; /* Espaiat entre els paràgrafs del footer */
+  margin: 5px 0; 
 }
 
 /* Estils per a l'animació d'ones */
@@ -290,14 +290,14 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 100px; /* Alçada de les ones */
+  height: 100px; 
   overflow: hidden;
 }
 
 .wave {
   position: absolute;
-  width: 2000px; /* Amplada de les ones */
-  height: 120px; /* Alçada de les ones */
+  width: 2000px;
+  height: 120px; 
   bottom: 0;
   background: url(https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png) center bottom no-repeat; /* Imatge de les ones */
   animation: 2s wave ease-in-out infinite alternate;
@@ -329,57 +329,56 @@ footer {
     transform: translateX(160px);
   }
 }
-/* Estils per al formulari de contacte */
 #formulari-contacte {
-  max-width: 600px; /* Amplada màxima del formulari */
-  margin: 0 auto; /* Centratge horitzontal */
+  max-width: 600px; 
+  margin: 0 auto; 
 }
 
 .field {
-  margin-bottom: 1.5rem; /* Espaiat entre camps */
+  margin-bottom: 1.5rem; 
 }
 
 .label {
-  font-weight: bold; /* Text en negreta */
+  font-weight: bold;
   color: #e74c3c;
 }
 
 .input,
 .textarea {
-  width: 100%; /* Amplada total dels camps d'entrada */
-  padding: 0.5rem; /* Espaiat interior */
-  border: 1px solid #ccc; /* Borde dels camps */
-  border-radius: 4px; /* Bordes arrodonits */
-  transition: border-color 0.3s; /* Transició suau del color del borde */
+  width: 100%; 
+  padding: 0.5rem; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  transition: border-color 0.3s;
   color: white; 
 }
 
 .input:focus,
 .textarea:focus {
-  border-color: #3273dc; /* Color del borde en focus */
+  border-color: #3273dc;
 }
 
 .button {
-  padding: 0.5rem 1rem; /* Espaiat interior del botó */
-  background-color: #e74c3c; /* Color de fons del botó */
-  color: #fff; /* Color del text del botó */
-  border: none; /* Borde del botó */
-  border-radius: 4px; /* Bordes arrodonits */
-  cursor: pointer; /* Cursor apuntador al passar per sobre */
-  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Transició suau del color de fons */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra petita */
+  padding: 0.5rem 1rem; 
+  background-color: #e74c3c;
+  color: #fff;
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .button:hover {
-  background-color: #e74c3c; /* Color de fons del botó en hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra més gran al passar per sobre */
-  transform: translateY(-2px); /* Lleuger moviment cap amunt */
+  background-color: #e74c3c; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-2px); 
 }
 
 .button:active {
-  background-color: #000; /* Color de fons del botó en actiu */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra original en actiu */
-  transform: translateY(0); /* Tornar a la posició original */
+  background-color: #000; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transform: translateY(0); 
 }
 
 h2 { /* Linea vermella al pasar el cursor*/
@@ -400,7 +399,7 @@ h2::after {
 h2:hover::after {
   transform: scale(1,1);
 }
-label { /* Linea vermella al pasar el cursor*/
+label { 
   display: table;
 }
 
@@ -422,10 +421,9 @@ label:hover::after {
   width: 80%;
   max-width: 1200px;
 }
-
 .review-carousel {
   display: flex;
-  overflow: hidden;
+  overflow: auto; 
   position: relative;
   border: 2px solid #e74c3c;
   padding: 1rem;
@@ -469,9 +467,18 @@ label:hover::after {
   font-size: 1em;
   color: #ddd;
 }
+
 .review-card img {
-  width: 50px; /* Tamaño pequeño */
-  height: 50px; /* Tamaño pequeño */
-  border-radius: 50%; /* Redondear la imagen */
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%; 
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .review-carousel {
+    flex-direction: column; 
+    align-items: center; 
+    overflow: visible;
+  }
 }
