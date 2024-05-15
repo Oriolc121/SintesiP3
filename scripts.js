@@ -32,8 +32,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       alert(errors.join('\n'));
     } else {
       alert('Formulari enviat correctament!');
+      document.getElementById('nom').value = '';
+      document.getElementById('correu').value = '';
+      document.getElementById('missatge').value = '';
     }
   });
+  
   
   // Carrusel automàtic
   document.addEventListener('DOMContentLoaded', function() {

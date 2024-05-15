@@ -174,27 +174,71 @@ section.section {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra petita */
 }
 
-#serveis .column:hover {
-  transform: scale(1.05); 
-  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.2); /* Ombra més gran al passar per sobre */
+#serveis {
+  padding: 2rem 0; /* Espaiat al voltant de la secció */
+}
+
+#serveis .title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1.5rem;
 }
 
 #serveis .columns {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-#serveis .columns .column {
-  margin: 0 1rem;
+#serveis .column {
+  background-color: #2a2a2a; /* Fons de la columna per ressaltar */
+  border: 2px solid transparent; /* Contorn transparent per a la transició */
+  padding: 2rem 1rem;
+  margin: 1rem;
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+  border-radius: 10px; /* Bordes arrodonits */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra inicial */
 }
 
-#serveis .columns .column:first-child {
-  margin-left: 0;
+#serveis .column:hover {
+  transform: scale(1.1); /* Augment de mida al passar per sobre */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Ombra més gran al passar per sobre */
+  border: 2px solid #e74c3c; /* Contorn vermell al passar per sobre */
 }
 
-#serveis .columns .column:last-child {
-  margin-right: 0;
+#serveis .column h3 {
+  color: #fff;
+  margin-bottom: 1rem;
 }
+
+#serveis .column p {
+  color: #bbb;
+  margin-bottom: 1rem;
+}
+
+#serveis .column .button {
+  padding: 0.5rem 1rem; /* Espaiat interior del botó */
+  background-color: #e74c3c; /* Color de fons del botó */
+  color: #fff; /* Color del text del botó */
+  border: none; /* Borde del botó */
+  border-radius: 4px; /* Bordes arrodonits */
+  cursor: pointer; /* Cursor apuntador al passar per sobre */
+  transition: background-color 0.3s, transform 0.3s; /* Transició suau del color de fons */
+}
+
+#serveis .column .button:hover {
+  background-color: #c0392b; /* Color de fons del botó en hover */
+  transform: scale(1.05); /* Augment de mida al passar per sobre */
+}
+
+#serveis .column .button:active {
+  background-color: #a93226; /* Color de fons del botó en actiu */
+  transform: scale(0.95); /* Disminució de mida al fer clic */
+}
+
 hr {
   border: none;
   height: 5px;
