@@ -8,7 +8,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
   
-  // Validació del formulari
   document.getElementById('formulari-contacte').addEventListener('submit', function(event) {
     event.preventDefault();
     var nom = document.getElementById('nom').value;
@@ -64,7 +63,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       carruselItems[nextNextIndex].classList.add('next');
     }
   
-    setInterval(showNextImage, 3000); // Canvia d'imatge cada 3 segons
+    setInterval(showNextImage, 3000); 
   });
   
 
@@ -74,7 +73,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     setTimeout(function(){
       contenedor.style.visibility = 'hidden'; 
       contenedor.style.opacity = '0'; 
-    }, 3000); // aquest codi fa que la primera animacio es quedi uns 3 segons i es tregui
+    }, 3000); 
   }
   window.onscroll = function() {progressFunction()};
 
@@ -85,25 +84,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     document.getElementById("myBar").style.height = scrolled + "%";
   }
   document.addEventListener('DOMContentLoaded', function () {
-    // Obtenim tots els elements necessaris
     var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-    // Si no hi ha cap element, sortim
     if ($navbarBurgers.length === 0) {
       return;
     }
 
-    // Afegim listeners a cada botó de hamburguesa
     $navbarBurgers.forEach(function ($el) {
       $el.addEventListener('click', function () {
-        // Obtenim el target del botó de hamburguesa
         var target = $el.dataset.target;
         var $target = document.getElementById(target);
 
-        // Alterem la classe 'is-active' a tots els elements necessaris
         $el.classList.toggle('is-active');
         $target.classList.toggle('is-active');
       });
     });
   });
-
+  document.addEventListener('DOMContentLoaded', function() {
+    var tornarAmunt = document.getElementById('tornar-amunt');
+  
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) { 
+        tornarAmunt.style.display = 'block';
+      } else {
+        tornarAmunt.style.display = 'none';
+      }
+    });
+  
+    tornarAmunt.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' }); 
+    });
+  });
+  
