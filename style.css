@@ -557,3 +557,49 @@ u::after {
 u:hover::after {
   transform: scaleX(1);
 }
+
+.profesorat-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profesorat {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profesorat-inner {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.profesorat-item {
+  min-width: 33.33%;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+  padding: 20px;
+}
+
+.profesorat-item img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.profesorat-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
