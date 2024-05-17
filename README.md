@@ -4,15 +4,16 @@ Aquest és el repositori del projecte web de FitYou, una pàgina dissenyada per 
 
 ## Contingut
 
-- [Introducció](#introducció)
-- [Estructura del Projecte](#estructura-del-projecte)
-- [Seccions de la Pàgina](#seccions-de-la-pàgina)
-  - [Serveis](#serveis)
-  - [Contacte](#contacte)
-  - [Resenyes](#resenyes)
-- [Estil i Disseny](#estil-i-disseny)
-- [Funcionalitats](#funcionalitats)
-- [Crèdits](#crèdits)
+- [Introducció]
+- [Estructura del Projecte]
+- [Seccions de la Pàgina]
+  - [Serveis]
+  - [Contacte]
+  - [Resenyes]
+- [Estil i Disseny]
+- [Funcionalitats]
+- [Codi Obert]
+- [Crèdits]
 
 ## Introducció
 
@@ -21,4 +22,46 @@ FitYou és una plataforma de serveis de fitness en línia que ofereix una variet
 ## Estructura del Projecte
 
 El projecte està estructurat en les següents carpetes i fitxers principals:
+
+- `index.html`: Conté l'estructura HTML de la pàgina web.
+- `styles.css`: Fulla d'estils CSS per a la pàgina.
+- `script.js`: Fitxer JavaScript per a les funcionalitats dinàmiques.
+- `README.md`: Aquest document.
+
+## Seccions de la Pàgina
+
+### Serveis
+
+La secció de **Serveis** mostra els diferents serveis que oferim. Cada servei està representat per una targeta amb un títol, una descripció i un estil atractiu.
+
+### Contacte
+
+La secció de **Contacte** permet als usuaris enviar missatges a través d'un formulari. El formulari inclou camps per al nom, correu electrònic i missatge, amb validació per assegurar-se que tots els camps es completen correctament.
+
+### Resenyes
+
+La secció de **Resenyes** mostra els comentaris dels usuaris. Les resenyes es presenten en una fila de targetes que es desplacen cap a l'esquerra, i la primera ressenya a l'esquerra reapareix a la dreta, creant un efecte de carrusel infinit.
+
+## Estil i Disseny
+
+La pàgina web utilitza una paleta de colors foscos amb accents en vermell per crear una aparença elegant i senzilla. Els botons, les targetes de serveis i altres elements interactius tenen transicions suaus per millorar l'experiència de l'usuari.
+
+## Funcionalitats
+
+### Formulari de Contacte
+
+El formulari de contacte inclou validació per assegurar-se que els camps de nom, correu electrònic i missatge estan completats correctament abans d'enviar-lo. Un cop enviat, el formulari es restableix i es mostra un missatge d'èxit estilitzat.
+
+### Carrusel de Resenyes
+
+La secció de resenyes té un carrusel que permet als usuaris veure diferents comentaris. Les resenyes es mouen automàticament, i també es poden desplaçar manualment amb el cursor.
+
+## Codi Obert
+
+Aquest projecte ha fet ús de recursos de codi obert, com ara les onades del footer que es van trobar a CodePen. Aquests recursos han ajudat a millorar l'aspecte visual i la funcionalitat del lloc web.
+
+## Crèdits
+
+- Disseny i desenvolupament: Oriol Carbó Murà 
+- Inspiració i recursos de codi obert: CodePen.
 
