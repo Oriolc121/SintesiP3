@@ -61,8 +61,8 @@ Aquest projecte ha fet ús de recursos de codi obert, com ara les onades del foo
 Aquí podeu trobar els enllaços utilitzats com a referència per al desenvolupament d'aquesta pàgina web:
 
 - [Indicador de Carga en CSS i JS](https://www.youtube.com/watch?v=nq0vAO6SDlI)
-- [Enllaç 2](#)
-- [Enllaç 3](#)
+- [Animacions bàsiques CSS](https://www.youtube.com/watch?v=p4HCZYJdzZo)
+- [Navbar documentation](https://bulma.io/documentation/components/navbar/)
 
 
 
