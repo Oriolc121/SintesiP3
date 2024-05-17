@@ -52,13 +52,19 @@ La pàgina web utilitza una paleta de colors foscos amb accents en vermell per c
 
 El formulari de contacte inclou validació per assegurar-se que els camps de nom, correu electrònic i missatge estan completats correctament abans d'enviar-lo. Un cop enviat, el formulari es restableix i es mostra un missatge d'èxit estilitzat.
 
-### Carrusel de Resenyes
-
-La secció de resenyes té un carrusel que permet als usuaris veure diferents comentaris. Les resenyes es mouen automàticament, i també es poden desplaçar manualment amb el cursor.
-
 ## Codi Obert
 
 Aquest projecte ha fet ús de recursos de codi obert, com ara les onades del footer que es van trobar a CodePen. Aquests recursos han ajudat a millorar l'aspecte visual i la funcionalitat del lloc web.
+
+## Webgrafia
+
+Aquí podeu trobar els enllaços utilitzats com a referència per al desenvolupament d'aquesta pàgina web:
+
+- [Indicador de Carga en CSS i JS](https://www.youtube.com/watch?v=nq0vAO6SDlI)
+- [Enllaç 2](#)
+- [Enllaç 3](#)
+
+
 
 ## Crèdits
 
