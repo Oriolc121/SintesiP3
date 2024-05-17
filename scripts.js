@@ -73,7 +73,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     setTimeout(function(){
       contenedor.style.visibility = 'hidden'; 
       contenedor.style.opacity = '0'; 
-    }, 3000); 
+    }, 2000); 
   }
   window.onscroll = function() {progressFunction()};
 
