@@ -179,7 +179,7 @@ section.section {
 
 #serveis .title {
   text-align: center;
-  color: #fff;
+  color: #e74c3c;
   margin-bottom: 1.5rem;
 }
 
@@ -564,7 +564,7 @@ u:hover::after {
 
 #equip .title {
   text-align: center;
-  color: #fff;
+  color: #e74c3c;
   margin-bottom: 1.5rem;
 }
 
@@ -584,7 +584,7 @@ u:hover::after {
   text-align: center;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
 
 #equip .equip-column:hover {
