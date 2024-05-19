@@ -4,16 +4,17 @@ Aquest és el repositori del projecte web de FitYou, una pàgina dissenyada per 
 
 ## Contingut
 
-- [Introducció]
-- [Estructura del Projecte]
-- [Seccions de la Pàgina]
-  - [Serveis]
-  - [Contacte]
-  - [Resenyes]
-- [Estil i Disseny]
-- [Funcionalitats]
-- [Codi Obert]
-- [Crèdits]
+- [Introducció](#introducció)
+- [Estructura del Projecte](#estructura-del-projecte)
+  - [Serveis](#serveis)
+  - [Resenyes](#resenyes)
+  - [Equip](#equip)
+- [Estil i Disseny](#estil-i-disseny)
+- [Funcionalitats](#funcionalitats)
+  - [Formulari de Contacte](#formulari-de-contacte)
+- [Codi Obert](#codi-obert)
+- [Inspiració](#inspiració)
+- [Crèdits](#crèdits)
 
 ## Introducció
 
@@ -28,19 +29,17 @@ El projecte està estructurat en les següents carpetes i fitxers principals:
 - `script.js`: Fitxer JavaScript per a les funcionalitats dinàmiques.
 - `README.md`: Aquest document.
 
-## Seccions de la Pàgina
-
 ### Serveis
 
 La secció de **Serveis** mostra els diferents serveis que oferim. Cada servei està representat per una targeta amb un títol, una descripció i un estil atractiu.
 
-### Contacte
-
-La secció de **Contacte** permet als usuaris enviar missatges a través d'un formulari. El formulari inclou camps per al nom, correu electrònic i missatge, amb validació per assegurar-se que tots els camps es completen correctament.
-
 ### Resenyes
 
-La secció de **Resenyes** mostra els comentaris dels usuaris. Les resenyes es presenten en una fila de targetes que es desplacen cap a l'esquerra, i la primera ressenya a l'esquerra reapareix a la dreta, creant un efecte de carrusel infinit.
+La secció de **Resenyes** mostra els comentaris dels usuaris. 
+
+### Equip
+
+La secció de **Equip** presenta els membres del nostre equip. Cada perfil inclou una foto del membre, el seu nom, el rang dins de l'empresa i un enllaç al seu perfil de LinkedIn. Aquestes targetes es mostren en un format de carrusel per facilitar la navegació entre els diferents perfils.
 
 ## Estil i Disseny
 
@@ -56,18 +55,17 @@ El formulari de contacte inclou validació per assegurar-se que els camps de nom
 
 Aquest projecte ha fet ús de recursos de codi obert, com ara les onades del footer que es van trobar a CodePen. Aquests recursos han ajudat a millorar l'aspecte visual i la funcionalitat del lloc web.
 
-## Webgrafia
+## Inspiració
 
-Aquí podeu trobar els enllaços utilitzats com a referència per al desenvolupament d'aquesta pàgina web:
+Ens hem inspirat en diversos recursos per a colors, disseny i estructura de la pàgina:
+
+- [Mastermind](https://www.mastermind.ac/)
+- [Hack4U](https://hack4u.io/)
+
+## Crèdits
+
+Aquests son els videos que he utilitzat per a realitzar el projecte: 
 
 - [Indicador de Carga en CSS i JS](https://www.youtube.com/watch?v=nq0vAO6SDlI)
 - [Animacions bàsiques CSS](https://www.youtube.com/watch?v=p4HCZYJdzZo)
 - [Navbar documentation](https://bulma.io/documentation/components/navbar/)
-
-
-
-## Crèdits
-
-- Disseny i desenvolupament: Oriol Carbó Murà 
-- Inspiració i recursos de codi obert: CodePen.
-
