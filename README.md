@@ -69,3 +69,4 @@ Aquests son els videos que he utilitzat per a realitzar el projecte:
 - [Indicador de Carga en CSS i JS](https://www.youtube.com/watch?v=nq0vAO6SDlI)
 - [Animacions bàsiques CSS](https://www.youtube.com/watch?v=p4HCZYJdzZo)
 - [Navbar documentation](https://bulma.io/documentation/components/navbar/)
+- [Animacions CSS](https://www.w3schools.com/css/css3_animations.asp)
