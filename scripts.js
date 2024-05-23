@@ -36,8 +36,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       document.getElementById('missatge').value = '';
     }
   });
-  
-  
   // Carrusel automàtic
   document.addEventListener('DOMContentLoaded', function() {
     var carruselItems = document.querySelectorAll('.carousel-item');

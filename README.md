@@ -18,7 +18,7 @@ Aquest és el repositori del projecte web de FitYou, una pàgina dissenyada per 
 
 ## Introducció
 
-FitYou és una plataforma de serveis de fitness en línia que ofereix una varietat de serveis per ajudar els usuaris a mantenir-se en forma des de la comoditat de la seva llar. Aquesta pàgina web ha estat dissenyada amb un enfocament en l'elegància i la senzillesa, utilitzant una paleta de colors foscos amb tocs de vermell per crear una experiència visualment atractiva.
+Aquesta pàgina web ha estat dissenyada amb un enfocament en l'elegància i la senzillesa, utilitzant una paleta de colors foscos amb tocs de vermell per crear una experiència visualment atractiva.
 
 ## Estructura del Projecte
 
